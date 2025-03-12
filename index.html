@@ -1,28 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fauzan & Oxa</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url('images/manjur.jpg') no-repeat center center/cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Styling untuk elemen konten */
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Lebih gelap agar tulisan jelas */
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 700px;
+            margin: 20px 0; /* Tambahkan jarak atas-bawah */
+        }
+
+        h1, h2 {
+            background: rgba(0, 0, 0, 0.6); /* Agar tulisan terlihat */
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            width: 100%;
+        }
+
+        p {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Video dan gambar agar responsif */
+        .video-landscape, img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        /* Styling untuk video */
+        .video-landscape {
+            aspect-ratio: 16 / 9;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Styling untuk iframe YouTube */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        iframe {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;"><ins>Fauzan & Oxa</ins></h1>
-    <p style="text-align: center;"><b>Ini lagu sama seperti kamu manis sekali sayange</b></p>
-<div style="text-align: center;">
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/k0ubS6BhHu4">
-    </iframe>    
-</div>
-<section class="apology">
-    <h2 style="text-align: center;">Permintaan Maaf</h2>
-    <p>Sayang, maafkan aku atas kesalahan yang telah aku buat. Aku tidak pernah ingin menyakitimu, dan aku sangat menyesal atas semuanya. Kamu adalah orang yang sangat berharga bagiku, dan aku berjanji akan menjadi lebih baik. Aku mencintaimu lebih dari kata-kata yang bisa ungkapkan. 💖</p>
-</section>
-<div style="text-align: center;">
-    <img src="images/foto-saya.jpg" width="300" height="400" alt="Cinta"> 
-</div>
-    <h2 style="text-align: center;">Sayang Maafin Aku Ya Please, Aku sayaang ini kamu ini spesial lagu buat kamu aku minta maaf ya</h2>
-<div style="text-align: center;">
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/E6mGvYCDJY8">
-    </iframe>    
-</div>
+
+    <div class="container">
+        <h1><ins>💖 Fauzan & Oxa 💖</ins></h1>
+        <p><b>Ini lagu sama seperti kamu, manis sekali sayang</b></p>
+
+        <!-- Video YouTube -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/k0ubS6BhHu4" allowfullscreen></iframe>
+        </div>
+
+        <section class="apology">
+            <h2>Permintaan Maaf</h2>
+            <p>Sayang, maafkan aku atas kesalahanku. Aku tidak ingin menyakitimu dan sangat menyesal atas semuanya. Aku mencintaimu lebih dari yang bisa kuungkapkan. 💖</p>
+        </section>
+
+        <!-- Gambar -->
+        <img src="images/foto-saya.jpg" alt="Cinta">
+
+        <h2>Sayang, maafin aku ya please. Aku sayang kamu! Ini lagu spesial buatmu.</h2>
+
+        <!-- Video YouTube -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/E6mGvYCDJY8" allowfullscreen></iframe>
+        </div>
+
+        <h1>Kamu cantik sekali, terima kasih sudah kuat!</h1>
+        <p>Besok kamu harus semangat sempro sayangku yaa, aku bangga sama kamu dan yakin kamu pasti bisa melewati semua ini. Aku akan selalu ada untuk kamu.</p>
+        <p>Jangan pernah merasa sendiri sayang, aku di sini untuk kamu. Jangan ngambek lagi ya sayang, maafin aku please. Aku sayang banget sama kamu! Kamu harus fokus buat sempro besok, aku sangat bahagia mendengar kabar itu.</p>
+
+        <h2><ins><b>💖 Semangat Buat Besok Kesayanganku 💖</b></ins></h2>
+
+        <!-- Video Lokal -->
+        <video class="video-landscape" controls>
+            <source src="images/kelas.mp4" type="video/mp4">
+        </video>
+    </div>
+
 </body>
 </html>
